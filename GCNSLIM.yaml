@@ -1,0 +1,4 @@
+embedding_size: 128              # (int) The embedding size of users and items.
+n_layers: 1                    # (int) The number of layers in GCNSLIM.
+reg_weight: 1.0             # (float) The L2 regularization weight.
+alpha: 0.05                 # (float) The joint optimization weight.
