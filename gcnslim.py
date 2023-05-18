@@ -201,5 +201,5 @@ class GCNSLIM(GeneralRecommender):
         u_history_record = self.X[user]
 
         # dot with all item embedding to accelerate
-        scores = torch.matmul(u_history_record, self.restore_item_similarity.transpose(0, 1))
+        scores = torch.matmul(u_history_record, self.restore_item_similarity)
         return scores.view(-1)
